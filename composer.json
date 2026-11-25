@@ -1,0 +1,65 @@
+{
+  "name": "datacircle/laravel-boost",
+  "description": "Find the best GTM APIs. Four Laravel Boost tools call Datacircle's public API. You need no API key.",
+  "type": "library",
+  "license": "MIT",
+  "homepage": "https://datacircle.dev",
+  "keywords": [
+    "laravel",
+    "laravel-boost",
+    "boost",
+    "laravel-mcp",
+    "mcp",
+    "model-context-protocol",
+    "tools",
+    "api",
+    "gtm",
+    "datacircle"
+  ],
+  "authors": [
+    {
+      "name": "Wayne Hamadi",
+      "email": "wayne@datacircle.dev",
+      "homepage": "https://datacircle.dev"
+    }
+  ],
+  "support": {
+    "issues": "https://github.com/waynehamadi/laravel-boost-datacircle/issues",
+    "source": "https://github.com/waynehamadi/laravel-boost-datacircle",
+    "docs": "https://datacircle.dev/api"
+  },
+  "require": {
+    "php": "^8.2",
+    "ext-json": "*",
+    "laravel/boost": "^2.0",
+    "laravel/mcp": "^0.5.1|^0.6.0|^0.7.0|^0.8.0|^0.9.0|^1.0",
+    "illuminate/http": "^11.45.3|^12.41.1|^13.0",
+    "illuminate/support": "^11.45.3|^12.41.1|^13.0"
+  },
+  "require-dev": {
+    "orchestra/testbench": "^9.0|^10.8|^11.0",
+    "phpunit/phpunit": "^11.5|^12.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Datacircle\\LaravelBoost\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Datacircle\\LaravelBoost\\Tests\\": "tests/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Datacircle\\LaravelBoost\\DatacircleServiceProvider"
+      ]
+    }
+  },
+  "scripts": {
+    "test": "phpunit"
+  },
+  "minimum-stability": "stable",
+  "prefer-stable": true
+}
